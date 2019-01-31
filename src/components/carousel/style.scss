@@ -1,0 +1,11 @@
+.clean-carousel {
+  align-items: center;
+  display: flex;
+  position: relative;
+
+  &__group {
+    margin: 0;
+    padding: 0;
+    touch-action: manipulation;
+  }
+}

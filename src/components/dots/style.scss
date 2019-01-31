@@ -1,0 +1,26 @@
+$dot-color: #222;
+$dot-color-active: #4bc6ff;
+
+.clean-carousel {
+  &__dots {
+    align-items: center;
+    bottom: 5%;
+    cursor: default;
+    display: flex;
+    font-size: 2rem;
+    height: 5%;
+    justify-content: center;
+    left: 40%;
+    position: absolute;
+    width: 20%;
+    z-index: 9999;
+  }
+
+  &__dot {
+    color: $dot-color;
+
+    &-active {
+      color: $dot-color-active;
+    }
+  }
+}

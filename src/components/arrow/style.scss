@@ -1,0 +1,75 @@
+$arrow-bg-color: #3a3a3a;
+$arrow-bg-color-disabled: #929292;
+$arrow-bg-color-hover: #222;
+$arrow-color: #808080;
+$arrow-color-active: #a0f1ff;
+$arrow-color-hover: #4bc6ff;
+
+.clean-carousel {
+  &__arrow {
+    align-items: center;
+    background-color: $arrow-bg-color;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    user-select: none;
+    width: 50px;
+    z-index: 9999;
+
+    span {
+      color: $arrow-color;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      height: 50px;
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+      transform: scaleX(-1);
+    }
+
+    &:hover {
+      background-color: $arrow-bg-color-hover;
+
+      span {
+        color: $arrow-color-hover;
+      }
+    }
+
+    &:active {
+      span {
+        color: $arrow-color-active;
+      }
+    }
+
+    &--disabled {
+      background-color: $arrow-bg-color-disabled;
+      cursor: default;
+
+      &:hover {
+        background-color: $arrow-bg-color-disabled;
+
+        span {
+          color: $arrow-color;
+        }
+      }
+
+      &:active {
+        span {
+          color: $arrow-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "frameThrottle": {
+    "elapsed": 0,
+    "fps": 30,
+    "now": 0,
+    "startTime": 0,
+    "then": 0
+  },
+  "mouseTracking": {
+    "currentPosition": 0,
+    "downPosition": 0,
+    "groupPosition": 0,
+    "isDown": false,
+    "rightBoundry": 0
+  }
+}
